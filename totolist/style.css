@@ -1,0 +1,41 @@
+#header-text {
+    font-family: cursive;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 30px;
+    background-color: orangered;
+    width: 150px;
+    padding-left: 50px;
+    margin-left: 60px;
+    border-radius: 50px;
+}
+
+#input {
+    margin-left: 40%;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 200px;
+    height: 30px; /* Increased for better visibility */
+    margin-top: 60px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background: url('background.jpg') no-repeat top left/cover; Add your background image URL */
+    background: repeating-linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12) 
+    top left/cover ;
+    background-repeat: no-repeat;
+}
+
+#list-container {
+    margin-left: 40%; /* Adjusted for better alignment */
+    margin-top: 20px; /* Added some spacing */
+}
+
+#button {
+    margin-left: 10px;
+    background-color: red;
+    width: 80px;
+    border-radius: 40px;
+}

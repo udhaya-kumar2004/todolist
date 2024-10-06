@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toto-list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="header-text">totolist</h1>
+    <!-- totolist -->
+    <input id="input">
+    <button onclick="add()" id="button">ADD</button>
+    <ul id="list-container">
+         
+    </ul>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
+#header-text{
+    font-family: cursive;
+    font-weight:bold;
+    font-style: oblique;
+    font-size: 30px;
+    background-color:orangered;
+    width: 150px;
+    padding-left: 50px;
+    margin-left: 60px;
+    border-radius: 50px;
+}
+#input{
+    margin-left: 40%;
+    border:2px solid black ;
+    border-radius: 30px;
+    width: 200px;
+    height: 20px;
+    margin-top: 60px;
+}
+body{
+   background:
+    url()
+    no-repeat   
+    top left/cover;
+}
+#list-container{
+    margin-left: 530px;
+}
+#button{
+    margin-left: 10px;
+    background-color: red;
+    width: 80px;
+    border-radius: 40px;
+}
+        // selecting a ul tag in javascript
+        var ul=document.getElementById("list-container");
+        // selecting a input tag
+        var inputbox=document.getElementById("input")
+        // creating a function
+        function add()
+        {
+            // create a ul tag in javascript
+            var listitem=document.createElement("li");
+            listitem.innerHTML=input.value +"<button onclick='deleteItem(event)'>Delete</button>"
+            ul.append(listitem);
+        }
+        function deleteItem(event)
+        {
+           event.target.parentElement.remove()
+        }
